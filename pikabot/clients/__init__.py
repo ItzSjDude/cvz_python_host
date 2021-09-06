@@ -1,26 +1,17 @@
-from ..core import pdb, pget, PikaClient
+from ... import gpcid
 import os
+
+#__________Clients___________
+tgbot=bot4=bot3=bot2=bot=None
+
 if pdb.Alpha:
-    bot = PikaClient(pdb.Alpha)
-else: 
-    bot = None
+    bot=gpcid("#cGJvdDE")
 if pdb.Beta:
-    bot2 = client2 = PikaClient(pdb.Beta)
-else:
-    bot2 = client2 = None
-
+    bot2=gpcid("#cGJvdDI")
 if pdb.Gaama:
-    bot3 = client3 = PikaClient(pdb.Gaama)
-else:
-    bot3 = None
-
+    bot3=gpcid("#cGJvdDM")
 if pdb.Delta:
-    bot4 = client4 = PikaClient(pdb.Delta)
-else:
-    bot4 = client4 = None
-
+    bot4=gpcid("#cGJvdDQ")
 if pdb.Omega:
-    tgbot = tgbot_client = PikaClient(pdb.Omega, gBot=True)
-
-else:
-    tgbot = tgbot_client = None
+    tgbot=gpcid("#cHRnYm90")
+#_____________________________
