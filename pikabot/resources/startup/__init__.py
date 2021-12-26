@@ -25,11 +25,6 @@ import time
 pikalog = getLogger("Startup")
 
 #________Clients_________
-bot=gpcid("#cGJvdDE")
-bot2=gpcid("#cGJvdDI")
-bot3=gpcid("#cGJvdDM")
-bot4=gpcid("#cGJvdDQ")
-tgbot=gpcid("#cHRnYm90")
 #________________________
 
 async def pikabot(): 
