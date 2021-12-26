@@ -15,3 +15,4 @@ if pdb.Delta:
 if pdb.Omega:
     tgbot=gpcid("#cHRnYm90")
 #_____________________________
+__all__ = ["tgbot", "bot4","bot3","bot2","bot"]
