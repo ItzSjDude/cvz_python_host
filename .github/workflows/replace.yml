@@ -1,4 +1,4 @@
-name: Autofixes By ItzSjDude🚶🔥
+name: Pikabot Autofixes 🚶🔥
 on: push
 jobs:
   build:
@@ -13,8 +13,9 @@ jobs:
       - name: Create Pull Request
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Autofixes By ItzSjDude🚶🔥'
+          commit_message: 'Plugins Auto fixes'
           commit_options: '--no-verify'
+          repository: .
           commit_user_name: ItzSjDude
           commit_user_email: Support@itzsjdude.in
           commit_author: ItzSjDude <Support@itzsjdude.in>
