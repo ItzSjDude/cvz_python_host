@@ -1,4 +1,4 @@
-from ... import gpcid
+from .. import gpcid
 import os
 
 #__________Clients___________
