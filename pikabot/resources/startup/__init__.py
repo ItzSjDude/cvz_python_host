@@ -11,7 +11,7 @@
 
 from ...utils import pika_msg
 from ..login import pika_login
-from ...clients import gpcid, tgbot
+from ...clients import *
 from ..logit import *
 from sys import *
 import asyncio, os
