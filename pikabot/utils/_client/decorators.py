@@ -80,7 +80,7 @@ else:
 
 def ItzSjDude(**args):
     from inspect import stack
-    from pikabot import pget
+    from infinix import pget
     _plug = "\!"
     args["func"] = lambda e: e.via_bot_id is None
     stk = stack()
@@ -95,14 +95,14 @@ def ItzSjDude(**args):
     trigger_on_fwd = args.get('trigger_on_fwd', False)
     trigger_on_inline = args.get('trigger_on_inline', False)
     disable_errors = args.get("disable_errors", False)
-    pika = args.get("pika", False)
+    infx = args.get("infx", False)
     sudo = args.get("sudo", False)
     lol=True
    
    
-    if pika: 
+    if infx: 
         args["incoming"] = True
-        del args["pika"]  
+        del args["infx"]  
 
     if sudo:
         del args["sudo"]
@@ -110,9 +110,9 @@ def ItzSjDude(**args):
         args["outgoing"] = True
 
     if pattern is not None:
-        if pika:
+        if infx:
             if pattern.startswith("^/"):
-                pikatg = pattern.replace("^/", "\\/")
+                infxtg = pattern.replace("^/", "\\/")
                 args["pattern"] = re.compile(pikatg)
 
             elif pattern.startswith("\\#"):
@@ -120,12 +120,12 @@ def ItzSjDude(**args):
                 args["pattern"] = re.compile(pattern)
             else:
                 args["pattern"] = re.compile(_plug + pattern)
-                pikatg = _plug + pattern
+                infxtg = _plug + pattern
 
             try:
-                PikaAsst[file_test].append(pikatg)
+                InfAsst[file_test].append(infxtg)
             except BaseException:
-                PikaAsst.update({file_test: [pikatg]})
+                InfAsst.update({file_test: [infxtg]})
 
         else: 
             dpt=gpt=bpt=apt= None 
@@ -135,19 +135,19 @@ def ItzSjDude(**args):
                 dpt=gpt=bpt=apt=re.compile(pattern) 
             if pattern.startswith("^."):
                 del args["pattern"]
-                pikacmd = pattern.replace("^.", "")
+                infcmd = pattern.replace("^.", "")
                 if bot: 
-                    apt = re.compile(acmd + pikacmd)
-                    aspt = re.compile(sacmd + pikacmd)
+                    apt = re.compile(acmd + infcmd)
+                    aspt = re.compile(sacmd + infcmd)
                 if bot2:
-                    bpt = re.compile(bcmd + pikacmd) 
-                    bspt = re.compile(sbcmd + pikacmd)
+                    bpt = re.compile(bcmd + infcmd) 
+                    bspt = re.compile(sbcmd + infcmd)
                 if bot3:
-                    gpt = re.compile(gcmd + pikacmd) 
-                    gspt = re.compile(sgcmd + pikacmd)
+                    gpt = re.compile(gcmd + infcmd) 
+                    gspt = re.compile(sgcmd + infcmd)
                 if bot4:
-                    dpt = re.compile(dcmd + pikacmd) 
-                    dspt = re.compile(sdcmd + pikacmd) 
+                    dpt = re.compile(dcmd + infcmd) 
+                    dspt = re.compile(sdcmd + infcmd) 
             else:
                 del args["pattern"]
                 if bot: 
@@ -195,7 +195,7 @@ def ItzSjDude(**args):
             except KeyboardInterrupt:
                 pass
             except BaseException as e:
-                pikalog.exception(e)
+                infxlog.exception(e)
                 
                 if not disable_errors:
                     from .wrappers import auto_var
@@ -254,27 +254,27 @@ def ItzSjDude(**args):
                     remove("error.log")
 
         if bot:
-            if not pika and not sudo:
+            if not infx and not sudo:
                 bot.add_event_handler(wrapper, events.NewMessage(**args, pattern=apt))
             if sudo:
                 bot.add_event_handler(wrapper, events.NewMessage(**args, incoming=True, pattern=aspt, from_users=Asudo))
         if bot2:
-            if not pika and not sudo:
+            if not infx and not sudo:
                 bot2.add_event_handler(wrapper, events.NewMessage(**args, pattern=bpt))
             if sudo:
                 bot2.add_event_handler(wrapper, events.NewMessage(**args, incoming=True, pattern=bspt, from_users=Bsudo,))
         if bot3:
-            if not pika and not sudo:
+            if not infx and not sudo:
                 bot3.add_event_handler(wrapper, events.NewMessage(**args, pattern=gpt))
             if sudo:
                 bot3.add_event_handler(wrapper, events.NewMessage(**args, incoming=True, pattern=gspt, from_users=Gsudo))
         if bot4:
-            if not pika and not sudo:
+            if not infx and not sudo:
                 bot4.add_event_handler(wrapper, events.NewMessage(**args, pattern=dpt))
             if sudo:
                 bot4.add_event_handler(wrapper, events.NewMessage(**args, incoming=True, pattern=dspt, from_users=Dsudo))
         if tgbot:
-            if pika:
+            if infx:
                 tgbot.add_event_handler(wrapper, events.NewMessage(**args))
         try:
             LOAD_PLUG[file_test].append(wrapper)
