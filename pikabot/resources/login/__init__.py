@@ -94,4 +94,4 @@ async def pika_login(_PiKa_):
                     
         await tgclient.run_until_disconnected()
 
-__all__ = ['pika_login', 'PikaClient']
+__all__ = ['pika_login']
