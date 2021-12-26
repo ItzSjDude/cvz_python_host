@@ -29,7 +29,7 @@ def get_cl_name(_PiKa_):
         return "Multiclient3"
 
 async def pika_login(_PiKa_):
-    tgbot = tg_client = tgbot_client
+    tg_client = tgbot_client = tgbot
     _cn_=get_cl_name(_PiKa_)
     async with tgbot_client:
         me = await tgbot_client.get_me()
