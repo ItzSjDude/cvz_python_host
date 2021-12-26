@@ -5,8 +5,8 @@ import logging
 import sys
 from var import Var           
 from sys import modules
-import pikabot
-from pikabot import bot, tgbot, pikatgbot, ItzSjDude
+import infinix
+from pikabot import bot, tgbot, infxtgbot, ItzSjDude
 from pikabot.core import pdb, pget
 import pikabot.utils as _utilz
 from pathlib import Path as _asstpath
