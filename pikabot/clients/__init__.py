@@ -1,4 +1,4 @@
-from pikabot.core import gpcid
+from pikabot.core import gpcid, pdb
 import os
 
 #__________Clients___________
