@@ -9,7 +9,7 @@ Id5="#cHRnYm90"
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from ..database import pdb
-def PikaClient(session, gBot=None):
+def InfxClient(session, gBot=None):
     if gBot:
         return TelegramClient(
             "TgBot",
@@ -27,14 +27,14 @@ def PikaClient(session, gBot=None):
 
 def gpcid(_id_):
     if _id_==Id1:
-       return PikaClient(pdb.Alpha)
+       return InfxClient(pdb.Alpha)
     if _id_==Id2:
-       return PikaClient(pdb.Beta)
+       return InfxClient(pdb.Beta)
     if _id_==Id3:
-       return PikaClient(pdb.Gaama)
+       return InfxClient(pdb.Gaama)
     if _id_==Id4:
-       return PikaClient(pdb.Delta)
+       return InfxClient(pdb.Delta)
     if _id_==Id5: 
-       return PikaClient(pdb.Omega, gBot=True)
+       return InfxClient(pdb.Omega, gBot=True)
 
 __all__ = ['gpcid']
