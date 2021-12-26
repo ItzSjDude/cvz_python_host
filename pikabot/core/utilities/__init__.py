@@ -1,9 +1,9 @@
 #____ Client Ids _____
-Id1="#"+"cGJvdDE"
-Id2="#"+"cGJvdDI"
-Id3="#"+"cGJvdDM"
-Id4="#"+"cGJvdDQ"
-Id5="#"+"cHRnYm90"
+Id1="#cGJvdDE"
+Id2="#cGJvdDI"
+Id3="#cGJvdDM"
+Id4="#cGJvdDQ"
+Id5="#cHRnYm90"
 #_____________________
 
 from telethon import TelegramClient
