@@ -15,8 +15,6 @@ jobs:
         with:
           commit_message: 'Autofixes By ItzSjDude🚶🔥'
           commit_options: '--no-verify'
-          repository: .
-          branch: beta
           commit_user_name: ItzSjDude
           commit_user_email: Support@itzsjdude.in
           commit_author: ItzSjDude <Support@itzsjdude.in>
