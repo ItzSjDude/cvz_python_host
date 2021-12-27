@@ -27,7 +27,7 @@ _CleanUp() {
 
 _UpSource() {
     echo 'Github: Updating PikaBot With ItzSjDude/PikachuUserbot' 
-    git clone -b beta https://github.com/ItzSjDude/PikachuUserbot ./ &> /dev/null
+    git clone https://github.com/ItzSjDude/infinix ./ &> /dev/null
     git clone -b Beta https://github.com/ItzSjDude/PikaBotPlugins ./Temp &> /dev/null
     mkdir ./plugins
     cp ./Temp/plugins/*.py ./plugins
@@ -38,6 +38,6 @@ StartUp() {
     _logo
     _CleanUp
     _UpSource
-    python3 -m pikabot
+    python3 -m INFINIX
 }
 
