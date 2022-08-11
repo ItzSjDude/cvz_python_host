@@ -59,6 +59,8 @@ apt-get install -y --no-install-recommends \
     python3 \
     python3-dev \
     python3-pip \
+    libxml2-dev \
+    libxslt-dev \
     libreadline-dev \
     zipalign \
     sqlite3 \
