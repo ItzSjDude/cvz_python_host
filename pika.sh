@@ -75,8 +75,8 @@ apt-get install -y --no-install-recommends \
     policykit-1
 apt autoremove --yes
 
-git clone https://github.com/ItzSjDude/infinix.git . && pip3 install --upgrade pip setuptools && pip3 install -r requirements.txt && mkdir bin && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
-
+pip3 install --upgrade pip setuptools && git clone https://github.com/ItzSjDude/infinix.git ./ && mkdir bin && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
+pip3 install -r requirements.txt
 
 
 
