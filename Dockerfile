@@ -11,4 +11,4 @@
 FROM ubuntu:latest
 COPY pika.sh /tmp/pika.sh
 RUN /tmp/pika.sh && chmod +x /usr/local/bin/* 
-WORKDIR root/ItzSjDude
+
