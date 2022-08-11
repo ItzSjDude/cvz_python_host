@@ -8,38 +8,7 @@
 #
 # All rights reserved 
 
-FROM python:3.9-slim-buster
+FROM ubuntu:latest
+COPY pika.sh /tmp/pika.sh
 WORKDIR root/ItzSjDude
-ENV PIP_NO_CACHE_DIR 1
-RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
-RUN apt -qq update
-RUN apt -qq install -y --no-install-recommends \
-    curl \
-    git \
-    gnupg2 \
-    unzip \
-    wget
-
-RUN git config --global core.preloadindex true && git config --global core.fscache true && git config --global gc.auto 256
-RUN apt -qq update
-ENV LANG C.UTF-8
-ENV DEBIAN_FRONTEND noninteractive
-
-# install required packages
-RUN apt -qq install -y --no-install-recommends \
-    build-essential \
-    coreutils \
-    jq \
-    pv \
-    gcc \
-    ffmpeg \
-    mediainfo \
-    unzip \
-    zip \
-    megatools && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
-
-
-COPY . .
-RUN pip3 install --no-cache-dir -r requirements.txt
-CMD ["python", "-m", "pikabot"]
+RUN /tmp/pika.sh && chmod +x /usr/local/bin/* 
