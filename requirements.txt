@@ -8,6 +8,7 @@ async_generator
 beautifulsoup4
 bs4
 cfscrape
+mysqlclient
 coffeehouse
 cowpy
 cryptg
