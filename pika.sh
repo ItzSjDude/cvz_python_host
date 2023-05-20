@@ -57,6 +57,7 @@ apt-get install -y --no-install-recommends \
     mediainfo \
     wget \
     python3 \
+    libmysqlclient-dev \
     python3-dev \
     python3-pip \
     libxml2-dev \
