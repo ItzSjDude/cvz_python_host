@@ -1,2 +1,2 @@
 from .login import *
-from .startup import infinix
+from .startup import pikabot
