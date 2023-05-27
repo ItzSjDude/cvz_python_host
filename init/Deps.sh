@@ -1,38 +1,29 @@
 #!/bin/bash
-#
-# Copyright (C) 2020 by ItzSjDude@Github, < https://github.com/ItzSjDude/PikachuUserbot >.
-#
-# This file is part of < https://github.com/ItzSjDude/PikachuUserbot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# 
-# Please see < https://github.com/ItzSjDude/PikachuUserbot/blob/master/LICENSE >
-#
-# All rights reserved 
-#
-# © @ItzSjdude, Made for Pikabot
-
 _logo() {
     echo '
-    ╔═╦╦╗───╔╗──╔╗
-    ║╬╠╣╠╦═╗║╚╦═╣╚╗
-    ║╔╣║═╣╬╚╣╬║╬║╔╣
-    ╚╝╚╩╩╩══╩═╩═╩═╝
+    ┏━━┓╋╋╋╋┏━┓┏┓╋╋╋╋┏┓
+    ┗┃┃┛┏━┳┓┃━┫┣┫┏━┳┓┣┫┏┳┓
+    ┏┃┃┓┃┃┃┃┃┏┛┃┃┃┃┃┃┃┃┣┃┫
+    ┗━━┛┗┻━┛┗┛╋┗┛┗┻━┛┗┛┗┻┛
     '
 }
 
 _CleanUp() {
     echo 'Cleanup : Cleaning old source'
-    rm -rf ./plugins && rm -rf ./* && rm -rf ./.gitignore && rm -rf ./.git
+    rm -rf .* 
 } 
 
 _UpSource() {
-    echo 'Github: Updating PikaBot With ItzSjDude/PikachuUserbot' 
-    git clone -b beta https://github.com/mightycatx/pikapika ./ &> /dev/null
-    git clone -b Beta https://github.com/ItzSjDude/PikaBotPlugins ./Temp &> /dev/null
+    echo 'Github: Updating Your INFINIX With ItzSjDude/Infinix'      
+    git clone -b beta https://github.com/mightycatx/pikapika.git ./tmpp
+    cp -r ./tmpp/* .
+    git clone -b Beta https://github.com/ItzSjDude/PikaBotPlugins ./temp
     mkdir ./plugins
-    cp ./Temp/plugins/*.py ./plugins
-    rm -rf ./Temp
+    cp -r ./temp/plugins/*.py ./plugins
+    rm -rf ./temp
+    rm -rf ./tmpp
 }
+
 
 StartUp() {
     _logo
@@ -40,4 +31,3 @@ StartUp() {
     _UpSource
     python3 -m pikabot
 }
-
