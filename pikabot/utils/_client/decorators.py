@@ -411,7 +411,7 @@ def time_formatter(milliseconds: int) -> str:
         ((str(seconds) + " second(s), ") if seconds else "") + \
         ((str(milliseconds) + " millisecond(s), ") if milliseconds else "")
     return tmp[:-2]
-Infinix=pikabot
+Infinix=ItzSjDude
 
 class Loader():
     def __init__(self, func=None, **args):
