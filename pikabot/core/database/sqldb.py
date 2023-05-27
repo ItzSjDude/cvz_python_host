@@ -19,7 +19,9 @@ _get = os.environ.get
 
 
 def start() -> scoped_session:
-    engine = create_engine(_get("DATABASE_URL").replace("postgres", "postgresql"))
+#     engine = create_engine(_get("DATABASE_URL").replace("postgres", "postgresql"))
+    dburl = _get("CLEARDB_DATABASE_URL")
+    BASE = create_engine(dburl,pool_pre_ping=True)
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
@@ -98,7 +100,7 @@ class Notes(BASE):
     __tablename__ = "notes"
     pika = Column(String(14), primary_key=True)
     chat_id = Column(String(14), primary_key=True)
-    keyword = Column(UnicodeText, primary_key=True)
+    keyword = Column(String(14), primary_key=True)
     reply = Column(UnicodeText)
     f_mesg_id = Column(Numeric)
     
