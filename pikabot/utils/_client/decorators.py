@@ -411,7 +411,7 @@ def time_formatter(milliseconds: int) -> str:
         ((str(seconds) + " second(s), ") if seconds else "") + \
         ((str(milliseconds) + " millisecond(s), ") if milliseconds else "")
     return tmp[:-2]
-
+Infinix=pikabot
 
 class Loader():
     def __init__(self, func=None, **args):
@@ -419,4 +419,4 @@ class Loader():
         bot.add_event_handler(func, events.NewMessage(**args))
 
 
-__all__=['ItzSjDude', 'admin_cmd', 'time_formatter', 'get_readable_time', 'humanbytes', 'progress']
+__all__=['ItzSjDude', 'admin_cmd', 'time_formatter', 'get_readable_time', 'humanbytes', 'progress', 'Infinix']
