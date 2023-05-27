@@ -38,8 +38,8 @@ def pika_plugins(_pikamod=None):
     spec = spec_from_file_location(name, path)
     _pika = module_from_spec(spec)
                                    #____Pikabot__Plugins__Loader____
-    INFINIX = userbot = pikabot; _pika.bot = bot; _pika.Var = Var; _pika.rx = rx; _pika.Infinix = ItzSjDude; _pika.ItzSjDude = ItzSjDude; _pika.pdb = pdb; _pika.Config = Var; _pika.borg = bot; _pika.logger = logging.getLogger(_pikamod)
-    modules["userbot"] = pikabot; modules["userbot.utils"] = _utilz; modules["infinix"] = pikabot ; spec.loader.exec_module(_pika); bot.pika_cmd[_pikamod] = _pika; modules["pikabot"+_pikamod] = _pika; logpl.info("🔥Imported "+_pikamod)
+    userbot = pikabot; _pika.bot = bot; _pika.Var = Var; _pika.rx = rx; _pika.Infinix = ItzSjDude; _pika.ItzSjDude = ItzSjDude; _pika.pdb = pdb; _pika.Config = Var; _pika.borg = bot; _pika.logger = logging.getLogger(_pikamod)
+    modules["userbot"] = pikabot; modules["userbot.utils"] = _utilz;modules["INFINIX"] = pikabot; modules["infinix"] = pikabot ; spec.loader.exec_module(_pika); bot.pika_cmd[_pikamod] = _pika; modules["pikabot"+_pikamod] = _pika; logpl.info("🔥Imported "+_pikamod)
 
 def load_ext_module(shortname):
     if shortname.endswith("_"):
