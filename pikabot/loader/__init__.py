@@ -5,7 +5,7 @@ import logging
 import sys
 from var import Var           
 from sys import modules
-import infinix
+import pikabot 
 from pikabot import bot, tgbot, infxtgbot, ItzSjDude
 from pikabot.core import pdb, pget
 import pikabot.utils as _utilz
@@ -13,7 +13,7 @@ from pathlib import Path as _asstpath
 from logging import getLogger
 logpl = getLogger("Plugins:")
 logpa = getLogger("Assistant:")
-
+infinix = pikabot
 def pika_assistant(_pikasst=None):
     rx = "!"
     import plugins.__init__ as _Modules
