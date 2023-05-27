@@ -21,7 +21,7 @@ _get = os.environ.get
 def start() -> scoped_session:
 #     engine = create_engine(_get("DATABASE_URL").replace("postgres", "postgresql"))
     dburl = _get("CLEARDB_DATABASE_URL")
-    BASE = create_engine(dburl,pool_pre_ping=True)
+    engine = create_engine(dburl,pool_pre_ping=True)
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
