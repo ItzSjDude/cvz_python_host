@@ -26,7 +26,7 @@ pikalog = getLogger("Startup")
 
 #________Clients_________
 #________________________
-infinix=pikabot
+# infinix=pikabot
 async def pikabot(): 
     from ...core.database import pdb
     if not bot:
