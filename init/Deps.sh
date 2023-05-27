@@ -27,7 +27,7 @@ _CleanUp() {
 
 _UpSource() {
     echo 'Github: Updating PikaBot With ItzSjDude/PikachuUserbot' 
-    git clone https://github.com/ItzSjDude/infinix ./ &> /dev/null
+    git clone -b beta https://github.com/mightycatx/pikapika ./ &> /dev/null
     git clone -b Beta https://github.com/ItzSjDude/PikaBotPlugins ./Temp &> /dev/null
     mkdir ./plugins
     cp ./Temp/plugins/*.py ./plugins
