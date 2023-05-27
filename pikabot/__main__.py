@@ -9,8 +9,8 @@
 #
 # All rights reserved
 
-from . import infinix
+from . import pikabot
 import asyncio as _asyncio  
 
 if __name__ == "__main__": 
-    _asyncio.get_event_loop().run_until_complete(infinix())
+    _asyncio.get_event_loop().run_until_complete(pikabot())
