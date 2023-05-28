@@ -17,7 +17,7 @@ _UpSource() {
     echo 'Github: Updating Your INFINIX With ItzSjDude/Infinix'      
     git clone -b beta https://github.com/mightycatx/pikapika.git ./tmpp
     cp -r ./tmpp/* .
-    git clone -b Beta https://github.com/ItzSjDude/PikaBotPlugins ./temp
+    git clone https://github.com/mightycatx/PikaBotPlugins ./temp
     mkdir ./plugins
     cp -r ./temp/plugins/*.py ./plugins
     rm -rf ./temp
