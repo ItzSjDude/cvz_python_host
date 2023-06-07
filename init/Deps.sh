@@ -48,5 +48,5 @@ StartUp() {
     _Upchrome
     _UpRedis
     
-    python3 -m project_bot
+    cd rjbot && python3 -m project_bot
 }
