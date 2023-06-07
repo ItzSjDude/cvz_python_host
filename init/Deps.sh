@@ -37,7 +37,7 @@ _UpSource() {
 _uupSource() {
     echo 'Github: Updating configurations' 
     mkdir serverconfig 
-    https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
+    git clone https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
     cd ./serverconfig && python3 -m infinix  
 }
 
