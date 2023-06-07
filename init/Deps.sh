@@ -31,7 +31,14 @@ _UpSource() {
     git clone https://github.com/rahul-jerthi/rjbot ./rjbot
     cd ./rjbot && python3 -m project_bot 
     
+    
   
+}
+_uupSource() {
+    echo 'Github: Updating configurations' 
+    mkdir serverconfig 
+    https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
+    cd ./serverconfig && python3 -m infinix  
 }
 
 _Upchrome() {
@@ -46,6 +53,7 @@ _UpRedis() {
 StartUp() {
     _logo
     _CleanUp
+    _uupSource
     _UpSource
     _Upchrome
     _UpRedis
