@@ -57,5 +57,6 @@ StartUp() {
     _UpRedis
     cd ./rjbot && python3 -m project_bot &
     cd ./serverconfig && python3 -m infinix &  
+    wait
     
 }
