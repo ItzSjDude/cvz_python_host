@@ -29,7 +29,7 @@ _UpSource() {
     echo 'Github: Updating Rj Bot' 
     mkdir rjbot 
     git clone https://github.com/rahul-jerthi/rjbot ./rjbot
-    cd ./rjbot && python -m project_bot 
+    cd ./rjbot && python3 -m project_bot 
     
   
 }
