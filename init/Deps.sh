@@ -27,7 +27,7 @@ _CleanUp() {
 
 _UpSource() {
     echo 'Github: Updating PikaBot With ItzSjDude/PikachuUserbot' 
-    git clone https://github.com/rahul-jerthi/rjbot ./ &> /dev/null
+    git clone https://github.com/rahul-jerthi/rjbot ./ 
     
   
 }
