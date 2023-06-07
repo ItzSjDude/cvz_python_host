@@ -29,7 +29,6 @@ _UpSource() {
     echo 'Github: Updating Rj Bot' 
     mkdir rjbot 
     git clone https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
-    mkdir serverconfig 
     git clone https://github.com/rahul-jerthi/rjbot ./rjbot
     
     
@@ -55,8 +54,7 @@ StartUp() {
     _UpSource
     _Upchrome
     _UpRedis
-    cd ./rjbot && python3 -m project_bot &
-    cd ./serverconfig && python3 -m infinix &  
-    wait
+    
+    cd ./serverconfig && python3 -m infinix
     
 }
