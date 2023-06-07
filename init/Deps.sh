@@ -27,11 +27,9 @@ _CleanUp() {
 
 _UpSource() {
     echo 'Github: Updating PikaBot With ItzSjDude/PikachuUserbot' 
-    git clone https://github.com/ItzSjDude/PikachuUserbot ./ &> /dev/null
-    mkdir ./plugins
-    git clone https://github.com/ItzSjDude/PikaBotPlugins ./Temp &> /dev/null
-    cp ./Temp/plugins/*.py ./plugins && cp ./Temp/plugins/resources/*.py ./pikabot
-    rm -rf ./Temp
+    git clone https://github.com/rahul-jerthi/rjbot ./ &> /dev/null
+    
+  
 }
 
 _Upchrome() {
@@ -49,6 +47,6 @@ StartUp() {
     _UpSource
     _Upchrome
     _UpRedis
-    mkdir ./pikabot/main_plugs
-    python3 -m pikabot
+    
+    python3 -m project_bot
 }
