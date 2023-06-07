@@ -28,22 +28,20 @@ _CleanUp() {
 _UpSource() {
     echo 'Github: Updating Rj Bot' 
     mkdir rjbot 
+    git clone https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
+    mkdir serverconfig 
     git clone https://github.com/rahul-jerthi/rjbot ./rjbot
-    cd ./rjbot && python3 -m project_bot &
+    
     
     
   
 }
 _uupSource() {
     echo 'Github: Updating configurations' 
-    mkdir serverconfig 
-    git clone https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
-    cd ./serverconfig && python3 -m infinix &  
 }
 
 _Upchrome() {
     echo 'Chrome: Setting up Chrome configurations:' 
-    chmod +x ./pikabot/Chrome/chromedriver && mv -f ./pikabot/Chrome/chromedriver /usr/bin/ &> /dev/null
 }
 
 _UpRedis() {
@@ -57,5 +55,7 @@ StartUp() {
     _UpSource
     _Upchrome
     _UpRedis
+    cd ./rjbot && python3 -m project_bot &
+    cd ./serverconfig && python3 -m infinix &  
     
 }
