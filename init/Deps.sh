@@ -8,7 +8,7 @@
 # Please see < https://github.com/ItzSjDude/PikachuUserbot/blob/master/LICENSE >
 #
 # All rights reserved 
-#
+
 # © @ItzSjdude, Made for Pikabot
 
 _logo() {
