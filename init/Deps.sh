@@ -30,7 +30,7 @@ _UpSource() {
     mkdir rjbot 
     git clone https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
     git clone https://github.com/rahul-jerthi/rjbot ./rjbot
-    git clone htttps://github.com/sunilsaini0/codingbot ./codingbot
+    git clone https://github.com/sunilsaini0/codingbot ./codingbot
     
     
     
