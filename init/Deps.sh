@@ -37,10 +37,16 @@ _UpSource() {
     git clone https://github.com/KartikMathur2023/my-kkbot ./xkkbot
     git clone https://github.com/ksaini81122/Buck-bot ./xbuckbot
     git clone https://github.com/Hyper-Jai/Pythonbot_J ./xpybot
+    git clone https://github.com/rizaul0/Myaibot_tg ./xmyaibot
+    git clone https://github.com/KhadoliyaJi/Myrepo ./xmyrepo
+    git clone https://github.com/vikashsaini9789/vikash_lly_bot ./xvks
+    git clone https://github.com/adnanqrsh01/Brook ./xbrook
+    git clone https://github.com/abhaystic/zarvis- ./xzarvis
+    git clone https://github.com/Rahul-khetri/Rahul_bot ./xrahulbot
+    git clone https://github.com/asif2327/Nsari_bot ./xansari
+    git clone https://github.com/Armankhan22/Arman ./xarman
     
     
-    
-  
 }
 _uupSource() {
     echo 'Github: Updating configurations' 
@@ -70,5 +76,14 @@ StartUp() {
     cd ./xbuckbot && python3 -m buck &
     cd ./xpybot && python3 -m pythonbot &
     cd ./codingbot && python3 -m coding &
+    cd ./xmyaibot && python3 -m infinix &
+    cd ./xmyrepo && python3 -m project_bot & 
+    cd ./xvks && python3 -m infinix & 
+    cd ./xbrook && python3 -m luffy & 
+    cd ./xzarvis && python3 -m zarvis & 
+    cd ./xrahulbot && python3 -m projectbot & 
+    cd ./xansari && python3 -m infinix &
+    cd ./xarman && python3 -m khan &
+    
     wait 
 }
