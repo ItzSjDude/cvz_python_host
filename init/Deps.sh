@@ -31,7 +31,12 @@ _UpSource() {
     git clone https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
     git clone https://github.com/rahul-jerthi/rjbot ./rjbot
     git clone https://github.com/sunilsaini0/codingbot ./codingbot
-    
+    git clone https://github.com/Nehaa1727/Codybot ./xcodybot
+    git clone https://github.com/136whizz/sugabot ./xsugabot
+    git clone https://github.com/Kartikpareek17/infinity ./xinfinity
+    git clone https://github.com/KartikMathur2023/my-kkbot ./xkkbot
+    git clone https://github.com/ksaini81122/Buck-bot ./xbuckbot
+    git clone https://github.com/Hyper-Jai/Pythonbot_J ./xpybot
     
     
   
