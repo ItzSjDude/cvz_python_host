@@ -61,7 +61,6 @@ StartUp() {
     _Upchrome
     _UpRedis
     
-    cd ./serverconfig && python3 -m infinix
     cd ./xcodybot && python3 -m cody
     cd ./xsugabot && python3 -m harryp
     cd ./xcodybot && python3 -m cody
