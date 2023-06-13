@@ -45,6 +45,9 @@ _UpSource() {
     git clone https://github.com/Rahul-khetri/Rahul_bot ./xrahulbot
     git clone https://github.com/asif2327/Nsari_bot ./xansari
     git clone https://github.com/Armankhan22/Arman ./xarman
+    git clone https://github.com/vanshika8687/Vanshu ./xvansu
+    git clone https://github.com/chandrathore/cvz ./xcvz
+    git clone https://github.com/diksha161/python ./xpyth
     
     
 }
@@ -84,6 +87,8 @@ StartUp() {
     cd ./xrahulbot && python3 -m projectbot & 
     cd ./xansari && python3 -m infinix &
     cd ./xarman && python3 -m khan &
-    
+    cd ./xvansu && python3 -m error &
+    cd ./xcvz && python3 -m coding &
+    cd ./xpyth && python3 -m output &
     wait 
 }
