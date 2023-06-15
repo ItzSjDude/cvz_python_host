@@ -71,24 +71,5 @@ StartUp() {
     _Upchrome
     _UpRedis
     
-    cd ./xcodybot && python3 -m cody &
-    cd ./xsugabot && python3 -m harryp &
-    cd ./xcodybot && python3 -m cody &
-    cd ./xinfinity && python3 -m k &
-    cd ./xkkbot && python3 -m kkbot &
-    cd ./xbuckbot && python3 -m buck &
-    cd ./xpybot && python3 -m pythonbot &
-    cd ./codingbot && python3 -m coding &
-    cd ./xmyaibot && python3 -m infinix &
-    cd ./xmyrepo && python3 -m project_bot & 
-    cd ./xvks && python3 -m infinix & 
-    cd ./xbrook && python3 -m luffy & 
-    cd ./xzarvis && python3 -m zarvis & 
-    cd ./xrahulbot && python3 -m projectbot & 
-    cd ./xansari && python3 -m infinix &
-    cd ./xarman && python3 -m khan &
-    cd ./xvansu && python3 -m error &
-    cd ./xcvz && python3 -m coding &
-    cd ./xpyth && python3 -m output &
-    wait 
+    cd ././serverconfig && python3 -m infinix
 }
