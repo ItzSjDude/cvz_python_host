@@ -10,7 +10,7 @@
 # All rights reserved 
 
 
-set -euo pipefail
+
 
 
 echo '
@@ -19,12 +19,9 @@ echo '
 ┃┏┫┃━┫╋┗┫╋┃╋┃┏┫
 ┗┛┗┻┻┻━━┻━┻━┻━┛
 '
-export DEBIAN_FRONTEND=noninteractive
-export TZ=Asia/Kolkata
-ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-apt-get update && apt upgrade -y 
-apt-get install -y --no-install-recommends \
+apk update -y 
+apk install -y --no-install-recommends \
     coreutils \
     gifsicle \
     apt-utils \
@@ -72,7 +69,7 @@ apt-get install -y --no-install-recommends \
     zip \
     libfreetype6-dev \
     procps \
-    policykit-1 && apt autoremove --yes
+    policykit-1 && apk autoremove --yes
 
 pip3 install --upgrade pip setuptools && git clone https://github.com/ItzSjDude/cvz_python_host ./ && mkdir bin && mkdir pikabot/main_plugs  
 pip3 install -r requirements.txt
