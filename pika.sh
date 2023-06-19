@@ -10,7 +10,7 @@
 # All rights reserved 
 
 
-set -euo pipefail
+
 
 
 echo '
