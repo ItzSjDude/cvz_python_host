@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 #
 # Copyright (C) 2020 by ItzSjDude@Github, < https://github.com/ItzSjDude/PikachuUserbot >.
 #
@@ -10,7 +10,7 @@
 # All rights reserved 
 
 
-
+set -euo pipefail
 
 
 echo '
