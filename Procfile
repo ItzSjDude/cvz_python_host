@@ -1,1 +1,1 @@
-Pikabot: bash startpika
+web: bash startpika
