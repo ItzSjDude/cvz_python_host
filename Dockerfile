@@ -8,7 +8,7 @@
 #
 # All rights reserved 
 
-FROM ubuntu:latest
+FROM multiarch/ubuntu-core:arm64-bionic
 COPY pika.sh /tmp/pika.sh
 WORKDIR root/ItzSjDude
 RUN /tmp/pika.sh && chmod +x /usr/local/bin/* 
