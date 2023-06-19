@@ -25,12 +25,7 @@ _CleanUp() {
     rm -rf ./plugins && rm -rf ./* && rm -rf ./.gitignore && rm -rf ./.git
 } 
 
-_UpSource() {
-    echo 'Github: Updating Rj Bot' 
-   h
-    
-    
-}
+
 _uupSource() {
     echo 'Github: Updating configurations' 
 }
@@ -39,17 +34,15 @@ _Upchrome() {
     echo 'Chrome: Setting up Chrome configurations:' 
 }
 
-_UpRedis() {
-    pip3 install -U redis &> /dev/null
-} 
+# _UpRedis() {
+#     pip3 install -U redis &> /dev/null
+# } 
 
 StartUp() {
     _logo
     _CleanUp
     _uupSource
-    _UpSource
     _Upchrome
-    _UpRedis
     
     cd ././serverconfig && python3 -m infinix
 }
