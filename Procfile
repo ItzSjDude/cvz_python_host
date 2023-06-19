@@ -1,1 +1,1 @@
-web: bash startpika
+worker: bash startpika
