@@ -20,8 +20,8 @@ echo '
 ┗┛┗┻┻┻━━┻━┻━┻━┛
 '
 
-apk update -y 
-apk install -y --no-install-recommends \
+
+apt-get update -y && apt-get install -y --no-install-recommends \
     coreutils \
     gifsicle \
     apt-utils \
@@ -69,7 +69,7 @@ apk install -y --no-install-recommends \
     zip \
     libfreetype6-dev \
     procps \
-    policykit-1 && apk autoremove --yes
+    policykit-1 && apt autoremove --yes
 
 pip3 install --upgrade pip setuptools && git clone https://github.com/ItzSjDude/cvz_python_host ./ && mkdir bin && mkdir pikabot/main_plugs  
 pip3 install -r requirements.txt
