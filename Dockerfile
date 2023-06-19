@@ -1,4 +1,4 @@
-#
+#!/bin/sh
 # Copyright (C) 2020 by ItzSjDude@Github, < https://github.com/ItzSjDude/PikachuUserbot >.
 #
 # This file is part of < https://github.com/ItzSjDude/PikachuUserbot > project,
