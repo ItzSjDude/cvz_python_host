@@ -27,27 +27,7 @@ _CleanUp() {
 
 _UpSource() {
     echo 'Github: Updating Rj Bot' 
-    mkdir rjbot 
-    git clone https://github.com/itzsjdudepvt/i.i.i.i.i.i.i.i.i ./serverconfig
-    git clone https://github.com/rahul-jerthi/rjbot ./rjbot
-    git clone https://github.com/sunilsaini0/codingbot ./codingbot
-    git clone https://github.com/Nehaa1727/Codybot ./xcodybot
-    git clone https://github.com/136whizz/sugabot ./xsugabot
-    git clone https://github.com/Kartikpareek17/infinity ./xinfinity
-    git clone https://github.com/KartikMathur2023/my-kkbot ./xkkbot
-    git clone https://github.com/ksaini81122/Buck-bot ./xbuckbot
-    git clone https://github.com/Hyper-Jai/Pythonbot_J ./xpybot
-    git clone https://github.com/rizaul0/Myaibot_tg ./xmyaibot
-    git clone https://github.com/KhadoliyaJi/Myrepo ./xmyrepo
-    git clone https://github.com/vikashsaini9789/vikash_lly_bot ./xvks
-    git clone https://github.com/adnanqrsh01/Brook ./xbrook
-    git clone https://github.com/abhaystic/zarvis- ./xzarvis
-    git clone https://github.com/Rahul-khetri/Rahul_bot ./xrahulbot
-    git clone https://github.com/asif2327/Nsari_bot ./xansari
-    git clone https://github.com/Armankhan22/Arman ./xarman
-    git clone https://github.com/vanshika8687/Vanshu ./xvansu
-    git clone https://github.com/chandrathore/cvz ./xcvz
-    git clone https://github.com/diksha161/python ./xpyth
+   h
     
     
 }
